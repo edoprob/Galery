@@ -1,0 +1,63 @@
+*{ padding: 0; margin: 0; }
+ul, ul li{ list-style: none; }
+body{ background: #f4f4f4; font-family: Arial;}
+
+#content{ display: block; margin: 0 auto; max-width: 1200px; padding: 30px; }
+#albuns ul{
+	display: block;
+	padding: 30px;
+	width: 100%;
+	background: #ccc;
+}
+#albuns li{ 
+	width: 350px; 
+	height: 415px; 
+	overflow: hidden; 
+	float: left; 
+	display: block; 
+	position: relative; 
+	margin:15px 15px; 
+	border: 5px solid white;
+	background: white; 
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px #ccc; 
+	-webkit-box-shadow: 1px 1px 3px #ccc; 
+}
+#albuns li img{
+	max-width: 360px;
+	max-height: 360px; 
+	text-align: center;	
+	overflow: hidden;
+	border-radius: 3px; 
+	-moz-border-radius: 2px; 
+	-ms-border-radius: 2px; 
+	-webkit-border-radius: 2px;
+}
+#albuns li a:hover {color: #5e5356; text-decoration: none;}
+#albuns li div {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+#albuns li p {
+	margin: 0;
+	color: #5e5356;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 1250px) {
+	#content {max-width: 900px;}
+	#albuns li {width: 250px; height: 320px;}
+}
+@media only screen and (max-width: 947px) {
+	#content {max-width: 590px;}
+	#albuns li {width: 235px; height: 305px;}
+}
+@media only screen and (max-width: 640px) {
+	#content {max-width: 355px;}
+	#albuns li {width: 265px; height: 335px;}
+}
+@media only screen and (max-width: 390px) {
+	#content {max-width: 292px; padding: 13px;}
+	#albuns li {width: 265px; height: 335px; margin: 15px auto;}
+}
